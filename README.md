@@ -29,7 +29,7 @@ Includes a filter for gyro
 
 Calibration on start up, complete after three flashes of LED, beep will signify which mode it's in. Mode is remebered from last session. 
 
-Note;On first boot, assist will only work when PID numbers are added 
+Note; On first boot, assist will only work when PID numbers are added 
 
 _____________________
 
@@ -47,7 +47,7 @@ GY-521 (inverted)
 
 
 
-
+_____________________ Original readme _____________________
 
 
 # DRIFT-ASSIST-SYSTEM
