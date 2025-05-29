@@ -1,21 +1,37 @@
 Based on the great work by sidtalia with a lot of AI assistance on my side;
 
 3 x Modes cylced by button on pin 5;
+
 Rate mode - Classic yaw control - Cycled by pressing mode button, signalled by two short beeps
+
 Angle mode - Almost like a heading hold mode, resets angle when steering input returns to neutral, Cycled by pressing mode button, signalled by one long beep
+
 Yaw angle mode - Adaptive, stabilizes steering, selected by holding down mode button, signalled by three short beeps.
-Each mode can be tuned to strength, 0.0 = full strength, 1.0 = no assiatnce. Button on pin 6 increases strengtgh in steps 0.1 with a flash of LED correlating to the srength step with max step using a long LED flash. Steps will return to the minimum number step if button is pressed again at max step 
+
+Each mode can be tuned to strength, 0.0 = full strength, 1.0 = no assiatnce. Button on pin 6 increases strengtgh in steps 0.1 with a flash of LED correlating to the srength step with max 
+step using a long LED flash. Steps will return to the minimum number step if button is pressed again at max step 
+
+_____________________
 
 PID tuning available for each mode, with changes saved to respective profiles. 
+
 Angle and Adaptive P, I, D, tuneable
+
 Rate D tuneable. 
+
 PID tuning button on pin 8 allows to cycle through P, I and D with long press, P will sound one beep, I sounds two beeps, D sounds three. SHort button press will increase by steps, signalled with a LED flash and a beep. Max number signalled with a long beep and will return to minimum number if pressed again from max.
+
 All changes saved to rspective PID profiles and are presistent on next session.
+
+_____________________
 
 Includes a filter for gyro
 
-Calibration on start up, complete after three flashes of LED, beep will signify which mode. Mode is remebered from last session.
+Calibration on start up, complete after three flashes of LED, beep will signify which mode it's in. Mode is remebered from last session. 
 
+Note;On first boot, assist will only work when PID numbers are added 
+
+_____________________
 
 - Hardware 
 Arduino mini pro 3.3V 8MHz
